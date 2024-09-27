@@ -11,6 +11,9 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
+        <!-- FullCalendar CSS (si nécessaire) -->
+        <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/main.min.css' rel='stylesheet' />
+
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -32,5 +35,9 @@
                 @yield('content')
             </main>
         </div>
+        
+        <!-- FullCalendar JS (si nécessaire) -->
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/main.min.js'></script>
+        @yield('scripts')
     </body>
 </html>

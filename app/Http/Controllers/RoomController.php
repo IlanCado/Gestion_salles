@@ -67,6 +67,7 @@ class RoomController extends Controller
      */
     public function show(Room $room)
     {
+        $room->load('reservations'); // Charger les réservations associées à la salle
         return view('rooms.show', compact('room'));
     }
 

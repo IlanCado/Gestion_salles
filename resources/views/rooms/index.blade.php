@@ -21,7 +21,7 @@
                         @if($room->image)
                             <img src="{{ asset('storage/' . $room->image) }}" class="img-fluid rounded-start" alt="Image de la salle" style="max-width: 100%; height: auto; object-fit: cover;">
                         @else
-                            <img src="{{ asset('images/default-room.jpg') }}" class="img-fluid rounded-start" alt="Image par défaut" style="max-width: 100%; height: auto; object-fit: cover;">
+                            <img src="{{ asset('images/default-room.png') }}" class="img-fluid rounded-start" alt="Image par défaut" style="max-width: 100%; height: auto; object-fit: cover;">
                         @endif
                     </div>
 
